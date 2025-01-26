@@ -52,7 +52,7 @@ export const UserDashboard = () => {
       <div>
         <h3 className="text-lg font-semibold mb-2">Quick Actions</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <button className="bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-colors">
+          <button className="bg-gray-600 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition-colors">
             Apply for New Loan
           </button>
           <button className="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors">

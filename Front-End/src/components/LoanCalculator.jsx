@@ -87,7 +87,7 @@ export const LoanCalculator = ({ loanCategories }) => {
         </div>
       </div>
       <button
-        className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-colors"
+        className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
         onClick={handleCalculate}
       >
         Calculate Loan

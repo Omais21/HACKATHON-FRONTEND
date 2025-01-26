@@ -29,7 +29,6 @@ export const LoanApplication = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Here you would typically send this data to your backend
     console.log("Submitting application:", { loanDetails, guarantor1, guarantor2, personalInfo })
     alert("Loan application submitted successfully!")
   }
@@ -44,7 +43,7 @@ export const LoanApplication = () => {
             <input
               type="text"
               placeholder="Loan Category"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full p-2 border border-gray-500 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={loanDetails.category}
               onChange={(e) => setLoanDetails({ ...loanDetails, category: e.target.value })}
               required
@@ -52,7 +51,7 @@ export const LoanApplication = () => {
             <input
               type="text"
               placeholder="Subcategory"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full p-2 border border-gray-500 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={loanDetails.subcategory}
               onChange={(e) => setLoanDetails({ ...loanDetails, subcategory: e.target.value })}
               required
@@ -60,7 +59,7 @@ export const LoanApplication = () => {
             <input
               type="number"
               placeholder="Loan Amount (PKR)"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full border border-gray-500 p-2 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={loanDetails.amount}
               onChange={(e) => setLoanDetails({ ...loanDetails, amount: e.target.value })}
               required
@@ -68,11 +67,11 @@ export const LoanApplication = () => {
             <input
               type="number"
               placeholder="Loan Period (Years)"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full border border-gray-500 p-2 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={loanDetails.period}
               onChange={(e) => setLoanDetails({ ...loanDetails, period: e.target.value })}
               required
-            />
+               />
           </div>
         </div>
 
@@ -82,7 +81,7 @@ export const LoanApplication = () => {
             <input
               type="text"
               placeholder="Name"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full border border-gray-500 p-1 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={guarantor1.name}
               onChange={(e) => setGuarantor1({ ...guarantor1, name: e.target.value })}
               required
@@ -90,7 +89,7 @@ export const LoanApplication = () => {
             <input
               type="email"
               placeholder="Email"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full border border-gray-500 p-1 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={guarantor1.email}
               onChange={(e) => setGuarantor1({ ...guarantor1, email: e.target.value })}
               required
@@ -98,7 +97,7 @@ export const LoanApplication = () => {
             <input
               type="text"
               placeholder="Location"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full border border-gray-500 p-1 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={guarantor1.location}
               onChange={(e) => setGuarantor1({ ...guarantor1, location: e.target.value })}
               required
@@ -106,7 +105,7 @@ export const LoanApplication = () => {
             <input
               type="text"
               placeholder="CNIC"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full border border-gray-500 p-1 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={guarantor1.cnic}
               onChange={(e) => setGuarantor1({ ...guarantor1, cnic: e.target.value })}
               required
@@ -120,7 +119,7 @@ export const LoanApplication = () => {
             <input
               type="text"
               placeholder="Name"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full border border-gray-500 p-1 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={guarantor2.name}
               onChange={(e) => setGuarantor2({ ...guarantor2, name: e.target.value })}
               required
@@ -128,7 +127,7 @@ export const LoanApplication = () => {
             <input
               type="email"
               placeholder="Email"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full border border-gray-500 p-1 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={guarantor2.email}
               onChange={(e) => setGuarantor2({ ...guarantor2, email: e.target.value })}
               required
@@ -136,7 +135,7 @@ export const LoanApplication = () => {
             <input
               type="text"
               placeholder="Location"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full border border-gray-500 p-1 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={guarantor2.location}
               onChange={(e) => setGuarantor2({ ...guarantor2, location: e.target.value })}
               required
@@ -144,7 +143,7 @@ export const LoanApplication = () => {
             <input
               type="text"
               placeholder="CNIC"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full border border-gray-500 p-1 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={guarantor2.cnic}
               onChange={(e) => setGuarantor2({ ...guarantor2, cnic: e.target.value })}
               required
@@ -158,7 +157,7 @@ export const LoanApplication = () => {
             <input
               type="text"
               placeholder="Address"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full border border-gray-500 p-1 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={personalInfo.address}
               onChange={(e) => setPersonalInfo({ ...personalInfo, address: e.target.value })}
               required
@@ -166,7 +165,7 @@ export const LoanApplication = () => {
             <input
               type="tel"
               placeholder="Phone Number"
-              className="w-full border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
+              className="w-full border border-gray-500 p-1 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500"
               value={personalInfo.phoneNumber}
               onChange={(e) => setPersonalInfo({ ...personalInfo, phoneNumber: e.target.value })}
               required
@@ -176,12 +175,14 @@ export const LoanApplication = () => {
 
         <button
           type="submit"
-          className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-colors"
+          className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
         >
           Submit Application
         </button>
       </form>
+      
     </div>
   )
-}
+}  
+
 
